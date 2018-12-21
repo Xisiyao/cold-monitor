@@ -1,0 +1,28 @@
+s=（t,δ）
+a=（-1,0,+1）
+r=能量+延迟
+评价=匹配度
+
+奖赏函数再研究下
+
+产生一定范围随机数
+import numpy as np
+from numpy.linalg import cholesky
+import matplotlib.pyplot as plt
+
+sampleNo = 1000;
+mu = 10
+sigma = 4
+data=[0]*1000
+for n in range(1000):
+    while True:
+        s = np.random.normal(mu, sigma, 1 )
+        if 4<=s[0]<=16:
+            data[n]=s[0]
+            break
+plt.hist(data, 30, normed=False)
+plt.show()
+
+学习层、应用层？
+发病情况弄在一张图上，而且发病分布应该有区别，时间扩展，发病 时间是否可以保留两位小数
+这个占空比可以定义为我设计的这个吗？延迟的计算是不是有问题
