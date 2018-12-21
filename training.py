@@ -56,7 +56,7 @@ def update(number):
     return Eva
 
 if __name__ == "__main__":
-    number=720
+    number=480
     coti = ColdTime(number)
     env=Environment()
     illtime=np.zeros((2,number))
